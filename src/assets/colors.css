@@ -1,0 +1,253 @@
+/* Pop Art Portfolio - Centralized Color System */
+
+:root {
+  /* Primary Pop Art Colors */
+  --pop-red: #ff0000;
+  --pop-cyan: #00ffff;
+  --pop-yellow: #ffb703;
+  --pop-magenta: #ff00ff;
+  --pop-green: #00ff00;
+
+  /* Neutral Colors */
+  --pop-black: #000000;
+  --pop-white: #ffffff;
+  --pop-gray: #666666;
+  --pop-dark-gray: #333333;
+
+  /* New Solid Color */
+  --pop-dark-blue: #023047;
+
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: rgba(0, 0, 0, 0.8);
+  --bg-card: rgba(255, 255, 255, 0.1);
+  --bg-overlay: rgba(0, 0, 0, 0.9);
+
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-accent: #ffff00;
+
+  /* Border Colors */
+  --border-primary: #ff0000;
+  --border-secondary: #00ffff;
+  --border-accent: #ffff00;
+  --border-dark: #000000;
+
+  /* Shadow Colors */
+  --shadow-red: rgba(255, 0, 0, 0.3);
+  --shadow-cyan: rgba(0, 255, 255, 0.3);
+  --shadow-yellow: rgba(255, 255, 0, 0.3);
+  --shadow-magenta: rgba(255, 0, 255, 0.3);
+  --shadow-green: rgba(0, 255, 0, 0.3);
+
+  /* Updated Gradient Definitions - Now using solid color */
+  --gradient-primary: var(--pop-dark-blue);
+  --gradient-secondary: var(--pop-dark-blue);
+  --gradient-accent: var(--pop-dark-blue);
+  --gradient-overlay: linear-gradient(
+    45deg,
+    var(--shadow-red) 0%,
+    var(--shadow-cyan) 50%,
+    var(--shadow-yellow) 100%
+  );
+
+  /* Text Shadow Presets */
+  --text-shadow-primary: 2px 2px 0 var(--pop-black);
+  --text-shadow-accent: 4px 4px 0 var(--pop-red), 8px 8px 0 var(--pop-cyan);
+  --text-shadow-glow:
+    3px 3px 0 var(--pop-red), 6px 6px 0 var(--pop-cyan), 0 0 20px var(--pop-yellow);
+
+  /* Box Shadow Presets */
+  --box-shadow-primary: 4px 4px 0 var(--pop-yellow), 8px 8px 0 var(--pop-magenta);
+  --box-shadow-secondary: 6px 6px 0 var(--pop-yellow), 12px 12px 0 var(--pop-magenta);
+  --box-shadow-hover: 8px 8px 0 var(--pop-yellow), 16px 16px 0 var(--pop-magenta);
+
+  /* Border Presets */
+  --border-thin: 2px solid var(--pop-black);
+  --border-medium: 3px solid var(--pop-black);
+  --border-thick: 4px solid var(--pop-black);
+  --border-extra-thick: 6px solid var(--pop-black);
+
+  /* Animation Durations */
+  --animation-fast: 0.3s;
+  --animation-medium: 0.5s;
+  --animation-slow: 1s;
+
+  /* Z-Index Layers */
+  --z-background: 1;
+  --z-overlay: 2;
+  --z-content: 3;
+  --z-modal: 1000;
+  --z-navbar: 1000;
+}
+
+/* Color Utility Classes */
+.pop-red {
+  color: var(--pop-red);
+}
+.pop-cyan {
+  color: var(--pop-cyan);
+}
+.pop-yellow {
+  color: var(--pop-yellow);
+}
+.pop-magenta {
+  color: var(--pop-magenta);
+}
+.pop-green {
+  color: var(--pop-green);
+}
+.pop-black {
+  color: var(--pop-black);
+}
+.pop-white {
+  color: var(--pop-white);
+}
+.pop-dark-blue {
+  color: var(--pop-dark-blue);
+}
+
+.bg-pop-red {
+  background-color: var(--pop-red);
+}
+.bg-pop-cyan {
+  background-color: var(--pop-cyan);
+}
+.bg-pop-yellow {
+  background-color: var(--pop-yellow);
+}
+.bg-pop-magenta {
+  background-color: var(--pop-magenta);
+}
+.bg-pop-green {
+  background-color: var(--pop-green);
+}
+.bg-pop-black {
+  background-color: var(--pop-black);
+}
+.bg-pop-white {
+  background-color: var(--pop-white);
+}
+.bg-pop-dark-blue {
+  background-color: var(--pop-dark-blue);
+}
+
+.border-pop-red {
+  border-color: var(--pop-red);
+}
+.border-pop-cyan {
+  border-color: var(--pop-cyan);
+}
+.border-pop-yellow {
+  border-color: var(--pop-yellow);
+}
+.border-pop-magenta {
+  border-color: var(--pop-magenta);
+}
+.border-pop-green {
+  border-color: var(--pop-green);
+}
+.border-pop-dark-blue {
+  border-color: var(--pop-dark-blue);
+}
+
+/* Updated Gradient Utility Classes - Now using solid color */
+.gradient-primary {
+  background: var(--gradient-primary);
+}
+.gradient-secondary {
+  background: var(--gradient-secondary);
+}
+.gradient-accent {
+  background: var(--gradient-accent);
+}
+
+/* Text Shadow Utility Classes */
+.text-shadow-primary {
+  text-shadow: var(--text-shadow-primary);
+}
+.text-shadow-accent {
+  text-shadow: var(--text-shadow-accent);
+}
+.text-shadow-glow {
+  text-shadow: var(--text-shadow-glow);
+}
+
+/* Box Shadow Utility Classes */
+.box-shadow-primary {
+  box-shadow: var(--box-shadow-primary);
+}
+.box-shadow-secondary {
+  box-shadow: var(--box-shadow-secondary);
+}
+.box-shadow-hover {
+  box-shadow: var(--box-shadow-hover);
+}
+
+/* Border Utility Classes */
+.border-thin {
+  border: var(--border-thin);
+}
+.border-medium {
+  border: var(--border-medium);
+}
+.border-thick {
+  border: var(--border-thick);
+}
+.border-extra-thick {
+  border: var(--border-extra-thick);
+}
+
+/* Animation Utility Classes */
+.animate-fast {
+  transition: all var(--animation-fast) ease;
+}
+.animate-medium {
+  transition: all var(--animation-medium) ease;
+}
+.animate-slow {
+  transition: all var(--animation-slow) ease;
+}
+
+/* Hover Effects */
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px var(--pop-yellow);
+}
+
+/* Focus States */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--pop-yellow);
+}
+
+/* Active States */
+.active-lift:active {
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow-secondary);
+}
+
+Responsive Color Adjustments @media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode adjustments if needed */
+    --bg-primary: rgba(0, 0, 0, 0.98);
+    --bg-secondary: rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --animation-fast: 0.1s;
+    --animation-medium: 0.2s;
+    --animation-slow: 0.3s;
+  }
+}

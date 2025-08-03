@@ -1,0 +1,64 @@
+@import './base.css';
+@import './colors.css';
+
+/* Global styles for pop art portfolio */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Arial Black', 'Helvetica Bold', sans-serif; */
+  background: var(--pop-black);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* Global link styles */
+a {
+  text-decoration: none;
+  color: var(--pop-cyan);
+  transition: all var(--animation-fast) ease;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--pop-yellow);
+  text-shadow: var(--text-shadow-primary);
+}
+
+/* Utility classes for pop art effects */
+.pop-shadow {
+  text-shadow:
+    4px 4px 0 var(--pop-red),
+    8px 8px 0 var(--pop-cyan);
+}
+
+.pop-gradient {
+  background: linear-gradient(45deg, var(--pop-red), var(--pop-cyan), var(--pop-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  #app {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
