@@ -167,9 +167,6 @@ const navigateTo = (page) => {
 
 .cta-button:active {
   transform: translate(0, 0);
-  box-shadow:
-    4px 4px 0 var(--pop-yellow),
-    8px 8px 0 var(--pop-magenta);
 }
 
 .button-text {
